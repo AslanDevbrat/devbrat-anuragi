@@ -2,7 +2,7 @@
   "name": "portfolio",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://AslanDevbrat.github.io/portfolio/",
+  "homepage": "https://AslanDevbrat.github.io/devbrat-anuragi/",
   "type": "module",
   "scripts": {
     "dev": "vite",
