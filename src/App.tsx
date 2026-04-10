@@ -178,7 +178,7 @@ function App() {
           <a href="#about">About</a>
           <a href="#awards">Awards</a>
           <a href="#research">Research</a>
-          <a href="#patents">Patents</a>
+
           <a href="#conferences">Conferences</a>
           <a href="#experience">Experience</a>
           <a href="#projects">Projects</a>
@@ -406,48 +406,6 @@ function App() {
           </div>
         </section>
 
-        {/* PATENT APPLICATIONS (FULL LIST) */}
-        <section id="patents" className="section gray">
-          <SectionHeading title="Patent Applications (with Nokia Technologies Oy)" />
-          <div className="list-container">
-            <ListEntry
-              title="A Method for Real-Time Spatial Haptic Rendering via Dynamic Priority Management"
-              subtitle="Lead Inventor"
-              date="Filed Mar 2025"
-              description={["App. No.: 63/778657"]}
-            />
-            <ListEntry
-              title="Multi-Level Intensity Scaling for Haptic Prioritization Queues for Cognitive Load Reduction"
-              subtitle="Lead Inventor"
-              date="Filed Jun 2025"
-              description={["App. No.: 63/821587"]}
-            />
-            <ListEntry
-              title="User Focus Integration with Hand and Gaze Tracking for Adaptive Haptic Rendering"
-              subtitle="Lead Inventor"
-              date="Filed Jun 2025"
-              description={["App. No.: 63/821791"]}
-            />
-            <ListEntry
-              title="Dynamic priority culling for split rendering in networked haptics applications"
-              subtitle="Co-Inventor"
-              date="Filed Jun 2025"
-              description={["App. No.: 63/821781"]}
-            />
-            <ListEntry
-              title="Intelligent Haptic Signal Mediation through Energy Propagation in Virtual Environments"
-              subtitle="Co-Inventor"
-              date="Filed Jan 2025"
-              description={["App. No.: 63/746420"]}
-            />
-            <ListEntry
-              title="Method for the Application of Entropy and Thermal Decay within a Haptic Scene"
-              subtitle="Co-Inventor"
-              date="Filed Jan 2025"
-              description={["App. No.: 63/746410"]}
-            />
-          </div>
-        </section>
 
         {/* CONFERENCES SECTION */}
         <section id="conferences" className="section">
