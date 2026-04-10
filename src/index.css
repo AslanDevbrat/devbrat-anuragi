@@ -478,6 +478,11 @@ body {
     justify-content: center;
     padding-top: 4rem;
   }
+
+  .hero-meta,
+  .hero-social {
+    justify-content: center;
+  }
   
   .hero-name {
     font-size: 4rem;
