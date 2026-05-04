@@ -294,7 +294,7 @@ function App() {
 
               <div className="stats-grid hero-stats">
                 <div className="stat-item hero-stat-item">
-                  <h2 className="serif stat-number" style={{ fontSize: '3.5rem' }}><AnimatedCounter from={0} to={9} suffix="+" /></h2>
+                  <h2 className="serif stat-number" style={{ fontSize: '3.5rem' }}><AnimatedCounter from={0} to={10} suffix="+" /></h2>
                   <p className="stat-label" style={{ fontSize: '0.85rem' }}>Publications</p>
                 </div>
                 <div className="stat-item hero-stat-item">
@@ -395,10 +395,17 @@ function App() {
           <SectionHeading title="Peer-Reviewed Publications" />
           <div className="list-container">
             <ListEntry
+              title="Amplitude-Based Priority for Concurrent Torso Vibrotactile Cues"
+              subtitle="Proc. EuroHaptics 2026 Conference Papers"
+              date="2026"
+              description={["D. Anuragi, A. Wu, A. Farooq, M. Nayak, R. Singh, P. Coe, M. Salmimaa, and R. Raisamo", "A related demo paper is also accepted and will be presented at EuroHaptics 2026."]}
+              image={`${import.meta.env.BASE_URL}Pictures/eurohaptic.png`}
+            />
+            <ListEntry
               title="Which is Warmer, the Cake or the Oven? Unlocking Thermal Conductivity for VR Interaction"
               subtitle="Proc. CHI Conference on Human Factors in Computing Systems (CHI '26)"
               date="2026"
-              description={["D. Anuragi, A. Farooq, R. Singh, et al.", "Presented as a Demo paper/session in CHI 2026."]}
+              description={["D. Anuragi, A. Farooq, R. Singh, et al.", "Presented as a Full Paper and also as an Interactive Demo at CHI 2026."]}
               link="https://doi.org/10.1145/3772318.3790864"
               presentation="https://wonderful-cranachan-eff8e8.netlify.app"
               poster="https://canva.link/hifvuvawzemde56"
@@ -479,6 +486,7 @@ function App() {
         <section id="conferences" className="section">
           <SectionHeading title="Conferences & Travels" />
           <div className="conference-grid">
+            <ConferenceCard title="155th MPEG Meeting" location="Ibiza, Spain" date="April 2026" image={`${import.meta.env.BASE_URL}Pictures/MPEG 155.jpg`} />
             <ConferenceCard title="CHI 2026" location="Barcelona, Spain" date="May 2026" image={`${import.meta.env.BASE_URL}Pictures/chi2026.jpg`} />
             <ConferenceCard title="Augmented Humans 2026" location="Okinawa, Japan" date="Feb 2026" image={`${import.meta.env.BASE_URL}Pictures/Augmented Huaman 2026.jpg`} />
             <ConferenceCard title="CES 2026" location="Las Vegas, USA" date="Jan 2026" image={`${import.meta.env.BASE_URL}Pictures/CES 2026.jpg`} />
