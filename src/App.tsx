@@ -51,9 +51,10 @@ interface ListEntryProps {
   poster?: string;
   code?: string;
   image?: string;
+  linkText?: string;
 }
 
-function ListEntry({ title, subtitle, date, description, link, presentation, poster, code, image }: ListEntryProps) {
+function ListEntry({ title, subtitle, date, description, link, presentation, poster, code, image, linkText }: ListEntryProps) {
   const [expanded, setExpanded] = useState(false);
 
   return (
@@ -79,7 +80,7 @@ function ListEntry({ title, subtitle, date, description, link, presentation, pos
         <div className="entry-links-container">
           {link && (
             <a href={link} target="_blank" rel="noopener noreferrer" className="entry-link">
-              Full Publication <ExternalLink size={14} />
+              {linkText || "Full Publication"} <ExternalLink size={14} />
             </a>
           )}
           {presentation && (
@@ -515,6 +516,8 @@ function App() {
               subtitle="Nokia Research Feature – Feel The Future"
               date="May 2025"
               description={["Selected for Nokia's official video on the future of thermal haptics in XR."]}
+              link="https://www.youtube.com/watch?v=jP8mI5hrWvg"
+              linkText="YouTube"
             />
             <ListEntry
               title="Master's Thesis Co-Supervisor"
