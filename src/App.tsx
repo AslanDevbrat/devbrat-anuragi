@@ -45,7 +45,7 @@ interface ListEntryProps {
   title: string;
   subtitle?: string;
   date?: string;
-  description?: string[];
+  description?: (string | React.ReactNode)[];
   link?: string;
   presentation?: string;
   poster?: string;
@@ -482,7 +482,6 @@ function App() {
           </div>
         </section>
 
-
         {/* CONFERENCES SECTION */}
         <section id="conferences" className="section">
           <SectionHeading title="Conferences & Travels" />
@@ -506,6 +505,68 @@ function App() {
           <SectionHeading title="Experience" />
           <div className="list-container">
             <ListEntry
+              title="Academic Service & Reviewing"
+              subtitle="IEEE | ACM | Frontiers"
+              date="2024 – Present"
+              description={[
+                <span>
+                  <strong>Organizing Committee:</strong> Web Co-chair for the IEEE World Haptics Conference (WHC 2027).
+                </span>,
+                <span>
+                  <strong>Associate Chair (AC):</strong> Review papers for ACM MobileHCI and NordiCHI.
+                </span>,
+                <span>
+                  <strong>Reviewer:</strong> ACM Symposium on User Interface Software and Technology (UIST), International Journal of Human-Computer Studies (IJHCS), and Frontiers in Manufacturing Technology.
+                </span>,
+                <div className="service-tags" key="service-tags">
+                  <span className="service-tag">WHC 2027</span>
+                  <span className="service-tag">MobileHCI</span>
+                  <span className="service-tag">NordiCHI</span>
+                  <span className="service-tag">UIST</span>
+                  <span className="service-tag">IJHCS</span>
+                  <span className="service-tag">Frontiers</span>
+                </div>
+              ]}
+            />
+            <ListEntry
+              title="Master's Thesis Co-Supervisor & Examiner"
+              subtitle="Tampere University"
+              date="Nov 2024 – Present"
+              description={[
+                "Co-supervising three Master's students on topics related to thermal-RGB datasets and rubber hand illusions.",
+                "Providing guidance on research methodology, experimental design, and data analysis.",
+                <details className="theses-details">
+                  <summary>View Master's Theses (4)</summary>
+                  <ul className="theses-list">
+                    <li>
+                      <a href="https://urn.fi/URN:NBN:fi:tuni-202606036913" target="_blank" rel="noopener noreferrer" className="thesis-link">
+                        Evaluating Interaction Modalities for Augmented Thermal Vision in Mixed Reality : A Comparative Study of Gaze and Hand-based Input <ExternalLink size={13} className="thesis-icon" />
+                      </a>
+                      <span className="thesis-meta">Co-Supervisor • 2026</span>
+                    </li>
+                    <li>
+                      <a href="https://urn.fi/URN:NBN:fi:tuni-2025123112297" target="_blank" rel="noopener noreferrer" className="thesis-link">
+                        Thermal-RGB Dataset Creation and Annotation Using ImageBind and Pseudo-Ground Truth <ExternalLink size={13} className="thesis-icon" />
+                      </a>
+                      <span className="thesis-meta">Co-Supervisor • 2025</span>
+                    </li>
+                    <li>
+                      <a href="https://urn.fi/URN:NBN:fi:tuni-202602122481" target="_blank" rel="noopener noreferrer" className="thesis-link">
+                        Thermal vs. Tactile Stimuli in the Rubber Hand Illusion : Investigating a Possible Sensory Hierarchy in Body Ownership <ExternalLink size={13} className="thesis-icon" />
+                      </a>
+                      <span className="thesis-meta">Co-Supervisor & Examiner • 2026</span>
+                    </li>
+                    <li>
+                      <a href="https://urn.fi/URN:NBN:fi:tuni-202510129815" target="_blank" rel="noopener noreferrer" className="thesis-link">
+                        Redesigning a Fitness Mobile App to Encourage Physical Activities Among Middle-Aged and Elderly Users : A Case Study of HUR Mobile App <ExternalLink size={13} className="thesis-icon" />
+                      </a>
+                      <span className="thesis-meta">Examiner • 2025</span>
+                    </li>
+                  </ul>
+                </details>
+              ]}
+            />
+            <ListEntry
               title="Featured Research Demonstrator"
               subtitle="CES 2026 Showcase | Las Vegas"
               date="Jan 2026"
@@ -520,21 +581,21 @@ function App() {
               linkText="YouTube"
             />
             <ListEntry
-              title="Master's Thesis Co-Supervisor"
-              subtitle="Tampere University"
-              date="Nov 2024 – Present"
-              description={[
-                "Co-supervising three Master's students on topics related to thermal-RGB datasets and rubber hand illusions.",
-                "Providing guidance on research methodology, experimental design, and data analysis."
-              ]}
-            />
-            <ListEntry
               title="Project Associate"
               subtitle="AI4Bharat Lab — Indian Institute of Technology Madras (IIT Madras)"
               date="Aug 2022 – Nov 2023"
               description={[
                 "Overseeing a nationwide speech collection and automatic speech recognition (ASR) project across India.",
                 "Making substantial contributions to NLP projects including low-resource Indian language pretraining datasets."
+              ]}
+            />
+            <ListEntry
+              title="Teaching Assistant"
+              subtitle="Indian Institute of Science Education and Research (IISER) Bhopal"
+              date="Jan 2019 – May 2022"
+              description={[
+                "Selected as Teaching Assistant for 'Introduction to Programming' for three consecutive years and 'Introduction to Databases'.",
+                "Assisted professors in conducting programming labs and grading assignments for undergraduate students."
               ]}
             />
             <ListEntry
@@ -550,15 +611,6 @@ function App() {
               description={[
                 "Developed an Android app to geo-fence quarantined individuals during the COVID-19 pandemic using Firebase.",
                 "The application was recognized and implemented at the district level for public health monitoring."
-              ]}
-            />
-            <ListEntry
-              title="Teaching Assistant"
-              subtitle="Indian Institute of Science Education and Research (IISER) Bhopal"
-              date="Jan 2019 – May 2022"
-              description={[
-                "Selected as Teaching Assistant for 'Introduction to Programming' for three consecutive years and 'Introduction to Databases'.",
-                "Assisted professors in conducting programming labs and grading assignments for undergraduate students."
               ]}
             />
           </div>
