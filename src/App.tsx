@@ -489,7 +489,7 @@ function App() {
           <div className="conference-grid">
             <ConferenceCard title="Eurohaptics 2026" location="Siena, Italy" date="June 2026" image={`${import.meta.env.BASE_URL}Pictures/Eurohaptics.jpg`} />
             <ConferenceCard title="CHI 2026" location="Barcelona, Spain" date="May 2026" image={`${import.meta.env.BASE_URL}Pictures/chi2026.jpg`} />
-            <ConferenceCard title="155th MPEG Meeting" location="Ibiza, Spain" date="April 2026" image={`${import.meta.env.BASE_URL}Pictures/MPEG 155.jpg`} />
+            <ConferenceCard title="154th MPEG Meeting" location="Ibiza, Spain" date="April 2026" image={`${import.meta.env.BASE_URL}Pictures/MPEG 155.jpg`} />
             <ConferenceCard title="Augmented Humans 2026" location="Okinawa, Japan" date="Feb 2026" image={`${import.meta.env.BASE_URL}Pictures/Augmented Huaman 2026.jpg`} />
             <ConferenceCard title="CES 2026" location="Las Vegas, USA" date="Jan 2026" image={`${import.meta.env.BASE_URL}Pictures/CES 2026.jpg`} />
             <ConferenceCard title="IEEE World Haptics 2025" location="Suwon, South Korea" date="July 2025" image={`${import.meta.env.BASE_URL}Pictures/IEEE world Haptics.jpg`} />
