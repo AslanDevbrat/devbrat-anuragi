@@ -569,18 +569,24 @@ function App() {
               ]}
             />
             <ListEntry
+              title="Featured Researcher"
+              subtitle="Nokia Research Features"
+              date="May 2025 – July 2026"
+              description={[
+                "Selected for Nokia's official videos highlighting cutting-edge research in thermal haptics, XR, and immersive multimedia.",
+                <span>
+                  Video: <a href="https://www.youtube.com/watch?v=RKHLzdNdZ9g" target="_blank" rel="noopener noreferrer" className="entry-link" style={{ display: 'inline', fontSize: 'inherit', fontWeight: 600 }}>Exploring Immersive Haptics in Multimedia</a> (July 2026) <ExternalLink size={13} className="thesis-icon" />
+                </span>,
+                <span>
+                  Video: <a href="https://www.youtube.com/watch?v=jP8mI5hrWvg" target="_blank" rel="noopener noreferrer" className="entry-link" style={{ display: 'inline', fontSize: 'inherit', fontWeight: 600 }}>Thermal Haptics in XR</a> (May 2025) <ExternalLink size={13} className="thesis-icon" />
+                </span>
+              ]}
+            />
+            <ListEntry
               title="Featured Research Demonstrator"
               subtitle="CES 2026 Showcase | Las Vegas"
               date="Jan 2026"
               description={["Showcased GorZilla and SocialCompass research demos to global industry leaders."]}
-            />
-            <ListEntry
-              title="Featured Researcher"
-              subtitle="Nokia Research Feature – Feel The Future"
-              date="May 2025"
-              description={["Selected for Nokia's official video on the future of thermal haptics in XR."]}
-              link="https://www.youtube.com/watch?v=jP8mI5hrWvg"
-              linkText="YouTube"
             />
             <ListEntry
               title="Project Associate"
