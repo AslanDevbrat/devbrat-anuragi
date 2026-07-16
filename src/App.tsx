@@ -487,6 +487,7 @@ function App() {
         <section id="conferences" className="section">
           <SectionHeading title="Conferences & Travels" />
           <div className="conference-grid">
+            <ConferenceCard title="155th MPEG Meeting" location="Geneva, Switzerland" date="July 2026" image={`${import.meta.env.BASE_URL}Pictures/MPEG155.jpg`} />
             <ConferenceCard title="Eurohaptics 2026" location="Siena, Italy" date="June 2026" image={`${import.meta.env.BASE_URL}Pictures/Eurohaptics.jpg`} />
             <ConferenceCard title="CHI 2026" location="Barcelona, Spain" date="May 2026" image={`${import.meta.env.BASE_URL}Pictures/chi2026.jpg`} />
             <ConferenceCard title="154th MPEG Meeting" location="Ibiza, Spain" date="April 2026" image={`${import.meta.env.BASE_URL}Pictures/MPEG 155.jpg`} />
