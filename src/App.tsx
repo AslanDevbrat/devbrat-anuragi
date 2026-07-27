@@ -400,6 +400,7 @@ function App() {
               subtitle="Proc. EuroHaptics 2026 Conference Papers"
               date="2026"
               description={["D. Anuragi, A. Wu, A. Farooq, M. Nayak, R. Singh, P. Coe, M. Salmimaa, and R. Raisamo", "A related demo paper is also accepted and will be presented at EuroHaptics 2026."]}
+              link="https://doi.org/10.1007/978-3-032-32230-2_9"
               poster="https://canva.link/advewj8u8cdi88k"
               image={`${import.meta.env.BASE_URL}Pictures/eurohaptic.png`}
             />
