@@ -533,6 +533,14 @@ function App() {
               ]}
             />
             <ListEntry
+              title="Student Representative for the DP-HAT Programme"
+              subtitle="Tampere University"
+              date="Present"
+              description={[
+                "Serving as a student representative for the Doctoral Programme in Human-Technology Interaction (DP-HAT)."
+              ]}
+            />
+            <ListEntry
               title="Master's Thesis Co-Supervisor & Examiner"
               subtitle="Tampere University"
               date="Nov 2024 – Present"
