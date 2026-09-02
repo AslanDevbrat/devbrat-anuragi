@@ -229,6 +229,7 @@ function App() {
           <a href="#research" onClick={() => setIsMobileMenuOpen(false)}>Research</a>
           <a href="#conferences" onClick={() => setIsMobileMenuOpen(false)}>Conferences</a>
           <a href="#experience" onClick={() => setIsMobileMenuOpen(false)}>Experience</a>
+          <a href="#datasets" onClick={() => setIsMobileMenuOpen(false)}>Datasets</a>
           <a href="#projects" onClick={() => setIsMobileMenuOpen(false)}>Projects</a>
           <a href="#writings" onClick={() => setIsMobileMenuOpen(false)}>Writings</a>
           <a href="#featured-posts" onClick={() => setIsMobileMenuOpen(false)}>Posts</a>
@@ -305,6 +306,10 @@ function App() {
                 <div className="stat-item hero-stat-item">
                   <h2 className="serif stat-number" style={{ fontSize: '3.5rem' }}><AnimatedCounter from={0} to={3} suffix="+" /></h2>
                   <p className="stat-label" style={{ fontSize: '0.85rem' }}>Projects</p>
+                </div>
+                <div className="stat-item hero-stat-item">
+                  <h2 className="serif stat-number" style={{ fontSize: '3.5rem' }}><AnimatedCounter from={0} to={1} suffix="+" /></h2>
+                  <p className="stat-label" style={{ fontSize: '0.85rem' }}>Datasets</p>
                 </div>
               </div>
             </motion.div>
@@ -634,8 +639,37 @@ function App() {
           </div>
         </section>
 
+        {/* DATASETS & SOFTWARE */}
+        <section id="datasets" className="section">
+          <SectionHeading title="Datasets & Software" />
+          <div className="list-container">
+            <ListEntry
+              title="SGRT-140: Radiometric RGB-Thermal Pairs with Sensor-Grounded Captions and Human Quality Ratings"
+              subtitle="IEEE DataPort"
+              date="2026"
+              description={[
+                "D. Anuragi, A. Wu, A. Farooq, and R. Raisamo",
+                "SGRT-140 is a paired RGB-thermal image dataset where every thermal frame is radiometric, accompanied by sensor-grounded captions and human quality ratings."
+              ]}
+              link="https://doi.org/10.21227/92z5-nq59"
+              linkText="Dataset"
+            />
+            <ListEntry
+              title="Sensor-Grounded RGB-Thermal Image Captioning: A Multimodal Fusion Framework and Human-Aligned Evaluation"
+              subtitle="Code Ocean"
+              date="2026"
+              description={[
+                "A. Wu and D. Anuragi",
+                "A web application and multimodal fusion framework for paired RGB and thermal image analysis and evaluation."
+              ]}
+              link="https://doi.org/10.24433/CO.9581776.v1"
+              linkText="Code Capsule"
+            />
+          </div>
+        </section>
+
         {/* SELECTED PROJECTS */}
-        <section id="projects" className="section">
+        <section id="projects" className="section gray">
           <SectionHeading title="Selected Engineering Projects" />
           <div className="grid-2">
             <ListEntry
