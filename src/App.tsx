@@ -300,7 +300,7 @@ function App() {
                   <p className="stat-label" style={{ fontSize: '0.85rem' }}>Publications</p>
                 </div>
                 <div className="stat-item hero-stat-item">
-                  <h2 className="serif stat-number" style={{ fontSize: '3.5rem' }}><AnimatedCounter from={0} to={9} suffix="+" /></h2>
+                  <h2 className="serif stat-number" style={{ fontSize: '3.5rem' }}><AnimatedCounter from={0} to={11} suffix="+" /></h2>
                   <p className="stat-label" style={{ fontSize: '0.85rem' }}>Patents</p>
                 </div>
                 <div className="stat-item hero-stat-item">
